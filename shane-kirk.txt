@@ -6,7 +6,7 @@ https://codepen.io/ShaneKirk/pen/BapmxvO?editors=1100
     2. What is HTML used for?
         HTML is used to structure, section off, and organize a web page to make it functional.
     3. What is an attribute and where do we put it?
-         An attribute is something that modifies or adds functionality to an HTML tag. We put it inside the opening tag before the >
+         An attribute is something that modifies, adds functionality to, or labels an HTML tag. We put it inside the opening tag before the >
     4. What is the h1 tag used for? How many times should I use it on a page?
         h1 is the main sentiment of what that page is about, only use once per page.
     5. Name two tags that have required attributes
@@ -16,21 +16,38 @@ https://codepen.io/ShaneKirk/pen/BapmxvO?editors=1100
     7. What is an id?
         An id is a label placed in an HTML tag to use for styling or functionality on that specific tag. 
     8. What elements can I add an id to?
-        Any of them 
-    9. How many times can I use the same id on a page? 
-    10. What is a class? 
+        Any of them, just can't use the same id twice
+    9. How many times can I use the same id on a page?
+        Once only 
+    10. What is a class?
+        A class is a label placed in an element to identify it for styling 
     11. What elements can I add a class to? 
-    12. How many times can I use the same class on a page? 
+        Any element
+    12. How many times can I use the same class on a page?
+        As many times as you want to use the same style  
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute in the image tag used for? 
+        <a href="#" target="_blank">some link</a> 
+    14. What is the alt attribute in the image tag used for?
+        alt described what the image is for accessability reasons, screen readers, etc. 
     15. How do I reference an id?
+        Put a # before the id name
     16. What is the difference between a section and a div
-    17. What is CSS used for? 
+        section is semantic in that it describes a section of content, div is non-semantic and used to created containers for styling
+    17. What is CSS used for?
+        CSS is used to add style to HTML 
     18. How to we select an element? Example - every h2 on the page
+        In your stylesheet:
+        h1 {
+
+        }
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        A class can be re-used for multiple elements in a page, an id can only be used once. class might be used multiple times to keep style the same for a nav bar or a card. An id might be to add unique style to one element on the page. 
     20. How do we select classes in CSS?
+        . before the name of the class in the stylesheet
     21. How do we select a p element with a single class of “human””?
-    22. What is a parent child selector? When would this be useful? 
+        .human
+    22. What is a parent child selector? When would this be useful?
+         
     23. How do you select all links within a div with the class of sidebar?
     24. What is a pseudo selector?
     25. What do we use the change the spacing between lines?
