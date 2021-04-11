@@ -47,22 +47,56 @@ https://codepen.io/ShaneKirk/pen/BapmxvO?editors=1100
     21. How do we select a p element with a single class of “human””?
         .human
     22. What is a parent child selector? When would this be useful?
-         
+        parent child selector selects an element nested within another element. It would be useful if there are many of the same element within a page, say <p>, and you only want to style the <p> that are within the <h1>.
     23. How do you select all links within a div with the class of sidebar?
+        .sidebar a {
+
+        }
     24. What is a pseudo selector?
+        It selects an element only when it is in a certain state, such as when the mouse it hovering over it.
     25. What do we use the change the spacing between lines?
+        line-height: #;
     26. What do we use to change the spacing between letters?
+        letter-spacing: #;
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        CAPITALIZE- text-transform: uppercase;
+        lowercase- text-transform: lowercase;
+        Capitalize- text-transform: capitalize;
     28. How do I add a 1px border around my div that is dotted and black?
-    29. How do I select everything on the page? 
+        div {
+            border: 1px dotted black;
+        }
+    29. How do I select everything on the page?
+        * {
+
+        } 
     30. How do I write a comment in CSS?
-    31. How do I find out what file I am in, when I am using the command line? 
+        /* comment */
+    31. How do I find out what file I am in, when I am using the command line?
+        pwd - print working directory 
     32. Using the command line - how do I see a list of files/folders in my current folder?
-    33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    34. Why should I use version control? 
+        ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+        rm file.name this command permanently removes the file, no getting it back and can wipe an entire hard drive if in the wrong directory
+    34. Why should I use version control?
+        It keeps a history of all the changes made to a potentially massive file. If something breaks, you could always go back to a specific version you know works and implement that until the problem is figured out. 
     35. How often should I commit to github?
-    36. What is the command we would use to push our repo up to github? 
-    37. Walk me through Lambda's git flow. 
+        When a feature is functional or every 20 minutes, whichever comes first
+    36. What is the command we would use to push our repo up to github?
+        git push -u origin firstname-lastname (for the first branch push), git push thereafter 
+    37. Walk me through Lambda's git flow.
+        1) Fork the repo you want to work with on GitHub to your personal account
+        2) Copy the address of the forked repo
+        3) In the command line, create a directory where you want the repo to go
+        4) Type git clone <forked repo address>
+        5) cd into the repo you just cloned
+        6) Create a new branch to work on, git checkout -b firstname-lastname
+        7) code . to open the repo in VS Code, , make the changes you want to the repo, save 
+        8) add the changes to the staging area with git add .
+        9) commit the changes with comment of what was changed with git commit -m 'descriptive comment'
+        10) push the changes to github in new branch firstname-lastname with git push -u origin firstname-lastname
+        11) pull the changes from your GitHub account making sure to change the main directory to your personal account and the branch you are working on
+        12) add, commit, and push subsequent changes thereafter
 
 Stretch Questions
 
